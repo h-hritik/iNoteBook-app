@@ -24,7 +24,7 @@ const App = () => {
           <Alert message={alert?.message} type={alert?.type} />
           <Routes>
             <Route exact path="/Home" element={<Home />} />
-            <Route path="/about" component={About} />
+            <Route path="/About" element={<About />} /> {/* Corrected here */}
             <Route exact path="/login" element={<Login showAlert={showAlert} />} />
             <Route exact path="/signup" element={<Signup showAlert={showAlert} />} />
           </Routes>
